@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../public/css/competence.css">
+    <link rel="stylesheet" href="../public/css/css.css">
+    <link rel="stylesheet" href="../public/css/organiser_projet_professionnel.css"/>
+    <title>Compétences - Denis Jongmanee Port Folio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="name">Denis Jongmanee</li>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../competences.html"><strong>COMPETENCES</strong></a></li>
+            <li><a href="../stages.html">STAGES</a></li>
+           <!-- <li><a href="../projetsPersonnels.html">PROJETS PERSONNELS</a></li>-->
+            <li><a href="../veille.html">VEILLE</a></li>
+            <li><a href="../cv.html">CV</a></li>
+            <li><a href="../certification.html">CERTIFICATIONS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="competence">Organiser son développement profesionnel</h1>
+    </header>
+    <div class="content">
+        <div class="buttons-change-skill">
+            <ul>
+                <li><button id="button1" onclick="display(3,1)">Mettre en place son environnement d’apprentissage personnel</button></li>
+                <li><button id="button2" onclick="display(3,2)">Mettre en œuvre des outils et stratégies de veille informationnelle</button></li>
+                <li><button id="button3" onclick="display(3,3)">Gérer son identité professionnelle</button></li>
+            </ul>
+        </div>
+        <div style="height:100px" id="hidden-block"></div>
+        <div class="sous-competence" id="1" style="display: none">
+            <div class="description">
+                <h2>Mettre en place son environnement d’apprentissage personnel</h2>
+                <p></p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Formation sur l'utilisation d'un Raspberry et de capteurs</p>
+                        <a href="https://fr.pinout.xyz/pinout/pin3_gpio2#" target="_blank"><img src="../public/images/formation workshop.png" alt="formation workshop" id="meWorkshop" /></a>
+                        <a href="https://www.freva.com/fr/capteur-ultrason-hc-sr04-sur-raspberry-pi/" target="_blank"><img src="../public/images/formation2 workshop.png" alt="formation2 workshop" id="meWorkshop2" /></a>
+                    </td>
+                    <td>
+                        <p>Formation sur le scraping</p>
+                        <a href="https://symfony.com/doc/current/components/dom_crawler.html" target="_blank"><img src="../public/images/formation SpaceWiki.png" alt="formation SpaceWiki" id="meSpaceWiki"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Formation sur l'utilisation d'une API pour accéder à la base de données dans une application Symfony</p>
+                        <a href="https://symfony.com/doc/current/http_client.html" target="_blank"><img src="../public/images/formation gestionSejours.png" alt="formation gestionSejours" id="meGestionSejours"/></a>
+                    </td>
+                    <td>
+                        <p>Formation sur les frameworks javascript : Angular et NodeJS</p>
+                        <a href="https://devdocs.io/" target="_blank"><img src="../public/images/formation stage1.png" alt="formation stage1" id="meStage1"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Formation pour utiliser les balises Angular</p>
+                        <a href="https://material.angular.io/components/categories" target="_black"><img src="../public/images/formation angular material.png" alt="formation stage2" id="meStage2"/></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sous-competence" id="2" style="display: none">
+            <div class="description">
+                <h2>Mettre en œuvre des outils et stratégies de veille informationnelle</h2>
+                <p></p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Outil de Scraping en Symfony qui récupère les informations de Wikipédia et les conservent dans une base de données</p>
+                        <img src="../public/images/scraping SpaceWiki.png" alt="scraping SpaceWiki" id="mosSpaceWiki"/>
+                    </td>
+                    <td>
+                        <p>Outil de veille qui utilise un scraping pour récupérer des articles sur un sujet précis</p>
+                        <img src="../public/images/scraping OutilVeille.png" alt="scraping Outil de Veille" id="mosOutilVeille"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sous-competence" id="3" style="display: none">
+            <div class="description">
+                <h2>Gérer son identité professionnelle</h2>
+                <p>Les stages m'ont permis d'étendre mon réseau LinkedIn en incluent les profesionnels du domaine</p>
+            </div>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <p>Renforcer mon profil LinkedIn en ajoutant des contacts de mon stage dans mon réseau</p>
+                        <img src="../public/images/linkedIn stage1.png" alt="linkedin stage1" id="rpStage1"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-back">
+            <a href="../competences.html" ><button id="back">Revenir à la liste des compétences</button></a>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>LinkedIn : <a href="https://fr.linkedin.com/in/denis-jongmanee-6108091bb"><img id="linkedin"src="../public/images/linkedIn.png" alt="logoLinkedIn"/></a></li>
+            <li>Mail : denis.jongmanee@epsi.fr</li>
+            <li class="technos">Technologies utilisées pour la réalisation de ce PortFolio : HTML CSS JAVASCRIPT</li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="../index.js"></script>
+</body>
+</html>

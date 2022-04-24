@@ -1,0 +1,160 @@
+.content ul {
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+.content li {
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(221, 233, 242);
+    border-radius: 7px;
+}
+
+.content a {
+    text-decoration: none;
+    /* color: #007bff; */
+    color:black;
+}
+
+.content a:hover {
+    color:#034b99;
+}
+
+.content form {
+    margin-top:50px;
+    text-align: center;
+}
+.content input[type=button] {
+    border-radius: 6px;
+    border: none;
+    padding: 5px 20px;
+    font-size: large;
+    background-color: rgb(104, 177, 211);
+    color:white;
+}
+ 
+.content input[type=button]:hover {
+    color: blue;
+}
+
+.content input[type="text"] {
+    width: 30%;
+    height: 25px;
+    border: rgb(104, 177, 211) 2px solid;
+    border-radius: 5px;
+}
+
+.content input[type=button]:disabled {
+    background-color: gray !important;
+
+}
+
+.content input[type=button]:hover:disabled {
+    color: white;
+}
+
+#message {
+    text-align:center; 
+    color: red;
+    margin-top: 10px;
+}
+
+li p {
+    font-size: 15px;
+    margin: 5px 0px;
+    /* color:rgb(116, 180, 209) */
+    color:rgb(126, 126, 126);
+}
+
+li div button {
+    border-radius: 3px;
+    border: none;
+    padding: 3px 10px;
+    background-color: rgb(44, 119, 156);
+    color:white;
+}
+
+li div button:hover {
+   color: rgb(28, 28, 116);
+}
+
+li div button.success {
+    background-color:#03794d;
+}
+
+li div button.done {
+    background-color: rgb(190, 185, 185);
+}
+
+li div button:disabled:hover {
+    color:white;
+}
+
+li div span {
+    margin-left: 10px;
+    color:red;
+}
+
+.del-button {
+    background-color: #df3636;
+}
+
+.del-button:hover {
+    color:rgb(95, 6, 6);
+}
+
+#tag {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+#tag button {
+    margin-left: 10px;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 20px;
+    font-size: large;
+    background-color: rgb(122, 166, 187);
+    color:white;
+}
+
+#tag button:hover {
+    color: blue;
+}
+
+#subject {
+    text-align: center;
+}
+
+#options {
+    text-align: center;
+    margin: 10px;
+}
+#lang {
+    text-align: center;
+    background-color: rgb(104, 177, 211);
+    border:0;
+    padding:5px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+}
+
+
+.choix {
+    text-align: center;
+}
+
+.choix button {
+    margin-left: 10px;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 20px;
+    font-size: large;
+    background-color: rgb(122, 166, 187);
+    color:white;
+}
+
+.choix button:hover {
+    color: blue;
+}

@@ -1,0 +1,56 @@
+.referentiel-norme {
+    background-color: rgba(65, 65, 65, 0.281);
+    
+}
+
+table {
+    width: 100%;
+}
+
+#bootstrap {
+    width: 20%;
+}
+
+#mean {
+    width: 70%;
+}
+
+#reactnative {
+    width: 45%;
+}
+
+#symfony {
+    width: 40%;
+}
+
+#flask {
+    width: 80%;
+}
+
+#hPoin {
+    width: 70%;
+}
+
+#hSpaceWiki {
+    width: 80%;
+}
+
+#hSejours {
+    width: 50%;
+}
+
+#hReservationChalets {
+    width: 80%;
+}
+
+#hStage1 {
+    width: 40%;
+}
+
+.sauvegarde {
+    background-color: rgba(65, 65, 65, 0.281);
+}
+
+#node-express {
+    width: 80%;
+}

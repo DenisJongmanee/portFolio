@@ -1,0 +1,36 @@
+.button-back {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#back {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(104, 177, 211);
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color:white
+    
+}
+
+#back:hover {
+    color:blue;
+
+}
+
+
+td {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 5%;
+}
+
+
+.description {
+    margin-bottom: 5%; 
+    text-align: center; 
+}

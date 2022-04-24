@@ -1,0 +1,46 @@
+.apprentissage {
+    background-color: rgba(65, 65, 65, 0.281);
+}
+
+
+
+.identite {
+    background-color: rgba(65, 65, 65, 0.281);
+
+    margin-bottom: 3%;
+}
+
+#meWorkshop {
+    width: 30%;
+}
+#meWorkshop2 {
+    width: 30%;
+}
+
+#meSpaceWiki {
+    width: 80%;
+}
+
+#meGestionSejours {
+    width: 80%;
+}
+
+#meStage1 {
+    width: 100%;
+}
+
+#meStage2 {
+    width: 80%;
+}
+
+#mosSpaceWiki {
+    width: 80%;
+} 
+
+#rpStage1 {
+    width: 80%;
+}
+
+#mosOutilVeille {
+    width: 95%;
+}

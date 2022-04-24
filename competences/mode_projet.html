@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../public/css/competence.css">
+    <link rel="stylesheet" href="../public/css/css.css">
+    <link rel="stylesheet" href="../public/css/mode_projet.css">
+    <title>Compétences - Denis Jongmanee Port Folio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="name">Denis Jongmanee</li>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../competences.html"><strong>COMPETENCES</strong></a></li>
+            <li><a href="../stages.html">STAGES</a></li>
+           <!-- <li><a href="../projetsPersonnels.html">PROJETS PERSONNELS</a></li>-->
+            <li><a href="../veille.html">VEILLE</a></li>
+            <li><a href="../cv.html">CV</a></li>
+            <li><a href="../certification.html">CERTIFICATIONS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="competence">Travailler en mode projet</h1>
+    </header>
+    <div class="content">
+        <div class="buttons-change-skill">
+            <ul>
+                <li><button id="button1" onclick="display(3,1)">Analyser les objectifs et les modalités d’organisation d’un projet</button></li>
+                <li><button id="button2" onclick="display(3,2)">Planifier les activités</button></li>
+                <li><button id="button3" onclick="display(3,3)">Évaluer les indicateurs de suivi d’un projet et analyser les écarts</button></li>
+            </ul>
+        </div>
+        <div style="height:100px" id="hidden-block"></div>
+        <div class="sous-competence" id="1" style="display:none;">
+            <div class="description">
+                <h2>Analyser les objectifs et les modalités d’organisation d’un projet</h2>
+                <p>Modélisation de base de données qui répond aux attentes d'un projet</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Workshop : Choix d'utilisation de technologies</p>
+                        <img src="../public/images/python_raspberry.png" alt="python raspeberry" id="amWorkshop"/>
+                    </td>
+                    <td>
+                        <p>Modèle Conceptuel des données Réseau social Sport</p>
+                        <img src="../public/images/poin mcd.png" alt="mcd poin" id="amPoin"/> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Modèle Conceptuel des données SpaceWikipédia</p>
+                        <img src="../public/images/mcd spacewiki.png" alt="mcd spacewiki" id="amSpaceWiki"/>
+                    </td>
+                    <td>
+                        <p>Modèle Conceptuel des données Gestion de séjours</p>
+                        <img src="../public/images/mcd gestionsejours.png" alt="mcd gestionSejours" id="amGestionSejours"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Modèle Conceptuel des données Projet Camping</p>
+                        <img src="../public/images/mcd camping.png" alt="mcd camping" id="amCamping"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sous-competence" id="2" style="display:none;">
+            <div class="description">
+                <h2>Planifier les activités</h2>
+                <p>Utilisation d'outil de listages et planifications de tâches</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Trello Gestion Sejours</p>
+                        <img src="../public/images/trello gestionSejours.png" alt="trello gestionSejours" id="plGestionPatients"/>
+                    </td>
+                    <td>
+                        <p>Trello SpaceWikipédia</p>
+                        <img src="../public/images/trello spaceWiki.png" alt="trello SpaceWiki" id="pmSpaceWiki"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Trello Projet Camping</p>
+                        <img src="../public/images/trello camping.png" alt="trello Camping" id="pmCamping"/>
+                    </td>
+                    <td>
+                        <p>Trello Cauchemar Cuisine</p>
+                        <img src="../public/images/trello mobile.png" alt="trello Cauchemar Cuisine" id="pmCauchemarC">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Trello Stage de deuxième année</p>
+                        <img src="../public/images/trello stage2.png" alt="trello Stage 2" id="pmStage2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sous-competence" id="3" style="display:none;">
+            <div class="description">
+                <h2>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</h2>
+                <p>Utilisation d'un outil de versioning</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Workshop (Github)</p>
+                        <img src="../public/images/github workshop.png" alt="github workshop" id="eaWorkshop"/>
+                    </td>
+                    <td>
+                        <p>SpaceWikipédia (Github)</p>
+                        <img src="../public/images/github spacewiki.png" alt="github spaceWiki" id="eaSpaceWiki"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Gestion de Séjours (Github)</p>
+                        <img src="../public/images/github gestionsejours.png" alt="github gestionSejours" id="eaGestionSejours"/>
+                    </td>
+                    <td>
+                        <p>API Python (Github)</p>
+                        <img src="../public/images/github api python.png" alt="github apiPython" id="eaApiPython"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Projet Camping (Github)</p>
+                        <img src="../public/images/github camping.png" alt="github camping" id="eaCamping"/>
+                    </td>
+                    <td>
+                        <p>Stage de première année (Gitlab)</p>
+                        <img src="../public/images/github stage1.png" alt="github stage1" id="eaStage1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Projet Application Mobile (Github)</p>
+                        <img src="../public/images/githubMobile.png" alt="github cauchemar cuisine" id="eaCauchemarCuisine"/>
+                    </td>
+                    <td>
+                        <p>Stage de deuxième année(Github)</p>
+                        <img src="../public/images/github stage2.png" alt="github stage2" id="eaStage2"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-back">
+            <a href="../competences.html" ><button id="back">Revenir à la liste des compétences</button></a>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>LinkedIn : <a href="https://fr.linkedin.com/in/denis-jongmanee-6108091bb"><img id="linkedin"src="../public/images/linkedIn.png" alt="logoLinkedIn"/></a></li>
+            <li>Mail : denis.jongmanee@epsi.fr</li>
+            <li class="technos">Technologies utilisées pour la réalisation de ce PortFolio : HTML CSS JAVASCRIPT</li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="../index.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+.pdfbutton {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.pdfbutton button {
+    
+    text-decoration: none;
+    border: none;
+    background-color: blue;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.pdfbutton button:hover {
+    color: red;
+}
+
+.content {
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid;
+    margin-bottom: 2%;
+}
+
+.headCV {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    background-color: rgb(40, 50, 102);
+    padding-bottom: 2%;
+    color: white;    
+}
+
+.table {
+    width: 100%;
+    padding-bottom: auto;
+}
+
+.formations p {
+    margin-left: 10%;
+    margin-top: 0%;
+}
+
+.formations h3 {
+    color:blue;
+    margin-bottom: 0%;
+}
+
+.exp_pro p {
+    margin-top: 0%;
+    margin-left: 10%;  
+}
+
+.exp_pro h3 {
+    margin-bottom: 0%;
+    color: blue;
+}
+
+.autre_exp p {
+    margin-left: 10%;
+    margin-top: 0%;
+}
+
+.autre_exp h3 {
+    color:blue;
+    margin-bottom: 0%;
+
+}
+
+.colgauche {
+    background-color: rgb(139, 180, 224);
+    vertical-align: top;
+    padding-left:1%;
+    padding-right:1%; 
+    margin: 0%;
+}
+
+.coldroite {
+    vertical-align: top;
+    padding-left:1%;
+    padding-right:1%; 
+    margin: 0%;
+}
+
+h2 {
+    border: 1px solid;
+    text-align: center;
+}
+
+#jeuvideo {
+    width: 35%;
+
+}
+
+#programmation {
+    width: 15%;
+  
+}
+
+.nom_status {
+    padding-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom:4%;
+    vertical-align:middle;
+}
+
+#photo {
+    float: left;
+    width: 20%;
+    top: -20px;
+position: relative;
+}
+
+.centres_interet {
+    text-align: center;
+}

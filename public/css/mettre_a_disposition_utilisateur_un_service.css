@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+}
+#tPython {
+    width: 105%;
+}
+
+#tWorkshop {
+    width: 70%;
+}
+
+.test {
+    background-color: rgba(65, 65, 65, 0.281);
+}
+
+.accompagner {
+    
+    background-color: rgba(65, 65, 65, 0.281);
+
+    margin-bottom: 5%;
+}

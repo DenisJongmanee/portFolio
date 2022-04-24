@@ -1,0 +1,157 @@
+body {
+    background-color: white;
+    margin:0px;
+    min-width: 400px;
+}
+
+.navbar {
+    padding: 10px 0px;
+    background-color: rgb(79, 103, 153);
+}
+
+
+.navbar ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.navbar .name {
+    font-weight: bold;
+    font-size: 120%;
+    color:white;
+    margin-right: 5%;
+    padding-left: 0%;
+    margin-left: 0%;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li {
+    font-weight: bold;
+    display: inline;
+    padding: 1%;
+    margin-right: 1%;
+    font-size: large;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color:white;
+}
+
+.navbar strong {
+    
+    color: red;
+}
+
+header {
+    margin-top:1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+
+
+header .titre {
+    font-size: 8em;
+    margin: 0%;
+    text-align: center;
+}
+
+header .competence {
+    font-size: 3em;
+    margin: 0%;
+    padding: 1%;
+}
+.content {
+    min-height: 400px;
+    margin:20px;
+}
+
+
+.sous-competence h2 {
+    border-bottom: grey 1px solid;
+    /* border-top: black 1px solid; */
+    margin: 0;
+    padding:10px;
+}
+
+.sous-competence {
+    border-right: black 1px solid;
+    border: grey 1px solid;
+    background-color: white;
+    border-radius:10px;
+    color: rgb(141, 156, 185);
+}
+
+.sous-competence button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(141, 156, 185);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+
+    font-weight: bold;
+}
+
+.sous-competence button:hover {
+    color: rgb(21, 21, 180);
+}
+
+.buttons-change-skill {
+    margin: 80px 0px;
+
+} 
+
+.buttons-change-skill ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.buttons-change-skill ul li{
+    display: inline;
+}
+
+.buttons-change-skill button {
+    background-color: rgb(104, 177, 211);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color:white;
+}
+
+.buttons-change-skill button:hover {
+    color: rgb(21, 21, 180);
+}
+
+
+.last-skill {
+    border-bottom: black 1px solid;
+}
+.title-content {
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer {
+    padding-top:0.2%;
+    padding-bottom: 0.2%;
+    
+    color:white;
+    background-color: rgb(36, 36, 58);
+}
+
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul .technos {
+    margin-top: 1%;
+}
+
+footer #linkedin {
+    width: 1.3%;
+}
+

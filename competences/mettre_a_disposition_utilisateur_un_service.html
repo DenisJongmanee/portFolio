@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../public/css/competence.css">
+    <link rel="stylesheet" href="../public/css/css.css">
+    <link rel="stylesheet" href="../public/css/mettre_a_disposition_utilisateur_un_service.css">
+    <title>Compétences - Denis Jongmanee Port Folio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="name">Denis Jongmanee</li>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../competences.html"><strong>COMPETENCES</strong></a></li>
+            <li><a href="../stages.html">STAGES</a></li>
+          <!--  <li><a href="../projetsPersonnels.html">PROJETS PERSONNELS</a></li>-->
+            <li><a href="../veille.html">VEILLE</a></li>
+            <li><a href="../cv.html">CV</a></li>
+            <li><a href="../certification.html">CERTIFICATIONS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="competence">Mettre à disposition des utilisateurs un service informatique</h1>
+    </header>
+    <div class="content">
+        <div class="buttons-change-skill">
+            <ul>
+                <li><button id="button1" onclick="display(3,1)">Réaliser les tests d’intégration et d’acceptation d’un service</button></li>
+                <li><button id="button2" onclick="display(3,2)">Déployer un service</button></li>
+                <li><button id="button3" onclick="display(3,3)">Accompagner les utilisateurs dans la mise en place d’un service</button></li>
+            </ul>
+        </div>
+        <div style="height:100px" id="hidden-block"></div>
+        <div class="sous-competence" id="1" style="display:none;">
+            <div class="description">
+                <h2>Réaliser les tests d’intégration et d’acceptation d’un service</h2>
+                <p>Tester l'intégrité et le fonctionnement de l'application</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Tester la fonctionnalité des routes d'une API codé en Python</p>
+                        <img id="tPython" src="../public/images/test.png" alt="test API"/>
+                    </td>
+                    <td>
+                        <p>Tester l'intégration de capteurs ultrason</p>
+                        <img id="tWorkshop" src="../public/images/capteur.png" alt="test workshop"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sous-competence" id="2" style="display:none;">
+            <div class="description">
+                <h2>Déployer un service</h2>
+                <p>Plusieurs services déployés qui répondent aux objectifs des projets</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                       <p></p> 
+                    </td>
+                </tr>
+            </table>
+           
+        </div>
+        <div class="sous-competence" id="3" style="display:none;">
+            <div class="description">
+                <h2>Accompagner les utilisateurs dans la mise en place d’un service</h2>
+                <p>Documents ou vidéo pour expliquer le fonctionnement d'un service</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p>Réalisation d'une vidéo qui démontre le fonctionnement de l'application</p>
+                        <video controls width="250">
+                            <source src="../public/videos/IMG_E1266_MOV_AdobeCreativeCloudExpress.mp4"
+                                    type="video/mp4">
+                        
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                        
+                    </td>
+                    <td>
+                        <p>Réalisation d'un guide utilisateur pour l'installation et explication des fonctionnalités de l'application Symfony</p>
+                        <a href="https://www.dropbox.com/s/rp57qd426u5uxx6/doc%20utilisateur%20gestionSejours.pdf?dl=0" target="_blank"><button>Voir le guide utilisateur</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Réalisation d'une documentation utilisateur qui présente le fonctionnement de l'application Ressources numériques</p>
+                        <a href="https://www.dropbox.com/s/xvmvcsnjf3z89ek/Guide%20Utilisateur%20Space%20Wikipedia.pdf?dl=0" target="_blank"><button>Voir la documentation utilisateur</button></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-back">
+            <a href="../competences.html" ><button id="back">Revenir à la liste des compétences</button></a>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>LinkedIn : <a href="https://fr.linkedin.com/in/denis-jongmanee-6108091bb"><img id="linkedin"src="../public/images/linkedIn.png" alt="logoLinkedIn"/></a></li>
+            <li>Mail : denis.jongmanee@epsi.fr</li>
+            <li class="technos">Technologies utilisées pour la réalisation de ce PortFolio : HTML CSS JAVASCRIPT</li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="../index.js"></script>
+</body>
+</html>

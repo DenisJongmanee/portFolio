@@ -1,0 +1,82 @@
+.objectifs {
+    background-color: rgba(65, 65, 65, 0.281);
+
+}
+
+.planifier {
+
+
+}
+
+.suivi {
+    background-color: rgba(65, 65, 65, 0.281);
+    margin-bottom: 3%;
+}
+
+#amWorkshop {
+    width: 80%;
+}
+#amPoin {
+    width: 80%;
+}
+
+#amSpaceWiki {
+    width: 80%;
+}
+
+#amGestionSejours {
+    width: 80%;
+}
+
+#amCamping {
+    width: 50%;
+}
+
+#plGestionPatients {
+    width: 80%;
+}
+
+#pmSpaceWiki {
+    width: 85%;
+}
+
+#pmCamping {
+    width: 80%;
+}
+
+#pmCauchemarC {
+    width: 95%;
+}
+
+
+#eaWorkshop {
+    width: 80%;
+}
+
+#eaSpaceWiki {
+    width: 80%;
+}
+
+#eaGestionSejours {
+    width: 100%;
+}
+ 
+#eaApiPython {
+    width: 80%;
+}
+
+#eaCamping {
+    width: 90%;
+}
+
+#eaStage1 {
+    width: 90%;
+}
+
+#eaStage2 {
+    width: 90%;
+}
+
+#eaCauchemarCuisine {
+    width: 95%;
+}
