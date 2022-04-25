@@ -229,3 +229,10 @@ function displayVeille(id) {
 }
 
 window.onload = getSubjects;
+
+
+function displayStage(id) {
+	let block = document.getElementById(id);
+	console.log(block.style.display)
+	block.style.display = block.style.display === 'none' ? '' : 'none';
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./public/css/stage.css">
     <link rel="stylesheet" href="./public/css/css.css">
+
     <title>Stages - Denis Jongmanee Port Folio</title>
 </head>
 <body>
@@ -28,6 +29,7 @@
         <div class="stage1">
             <h2>Stage de première année - Logic@l-Conseils</h2>
             <p>Stage de 7 semaines effectué du 10 Mai 2021 au 25 Juin 2021</p>
+            
             <div class="images">
                 <img src="./public/images/logo-logical-conseils-copie.png" id="logicallogo" alt="logo-logic@l"/>
                 <img src="./public/images/map.png" id="logicalmap" alt="map-logic@l"/>
@@ -37,7 +39,14 @@
                 J'ai pu assisté l'un de ses employés dans le cadre de mon stage pour la réalisation d'un site de pronostics à l'occasion de l'Euro 2020.
                 Durant ce stage, j'ai appris à utiliser un nouvel langage que je n'avais jamais utilisé : le stack MEAN, piles de logiciels Javascript.
             </p>
-            <a href="https://www.dropbox.com/s/u1gzcv19frzjcqz/rapport_activite.pdf?dl=0" target="_blank"><button>Voir le rapport d'activité du stage chez Logic@l-Conseils</button></a>
+            <div style="text-align:center">
+            <button onclick="displayStage(1)">Afficher le rapport d'activités</button>    
+            <div style="margin-top:10px">
+                <object style="display:none" id="1" type="application/pdf" data="./public/pdf/rapport_activite.pdf" width="1000" height="600">
+                    Télécharger le tableau des compétences : <a href="./public/pdf/rapport_activite.pdf">test.xls</a>
+                </object>
+            </div>
+        </div>
         </div>
         <div class="stage2">
             <h2>Stage de deuxième année - Semwee</h2>
@@ -47,8 +56,12 @@
                 Semwee est l'entreprise d'accueil pour mon second stage informatique. Cette entreprise est en première phase de développement et propose à ses clients plusieurs outils qui permettents de gérer leur réfentiels sur le marché.
                 J'ai alors rejoint l'équipe où j'ai pu participer au développement de l'application dans les même technologies de mon premier stage : le stack MEAN.
             </p>
-            <a href="https://www.dropbox.com/s/53e66ks5r5dsp8l/rapport%20de%20stage%20B2%20Denis%20Jongmanee%20.pdf?dl=0" target="_blank"><button>Voir le rapport d'activité du stage chez Semwee</button></a>
-            
+            <button onclick="displayStage(2)">Afficher le rapport d'activités</button>
+            <div style="margin-top:10px">
+                <object style="display:none" id="2" type="application/pdf" data="./public/pdf/rapport de stage B2 Denis Jongmanee .pdf" width="1000" height="600">
+                    Télécharger le tableau des compétences : <a href="./public/pdf/rapport de stage B2 Denis Jongmanee .pdf">test.xls</a>
+                </object>
+            </div>
         </div>
       
     </div>
@@ -61,4 +74,5 @@
     </footer>
     <script type="text/javascript" src="./index.js"></script>
 </body>
+    <script src="./index.js"></script>
 </html>
