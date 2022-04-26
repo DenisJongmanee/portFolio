@@ -8,7 +8,7 @@ async function scraping() {
 		return;
 	}
 	document.getElementById("message").innerHTML = "Recherche en cours...";
-	const responseJSON = await fetch(`http://localhost:3000/api/scraping/${search}/${lang}`);
+	const responseJSON = await fetch(`http://82.165.68.245:3000/api/scraping/${search}/${lang}`);
 	const response = await responseJSON.json();
 	console.log(response);
 	const articles = response.listUrls;
@@ -86,7 +86,7 @@ function display(nbSkills, idSkill) {
 }
 
 async function addArticle(article, index) {
-	const response = await fetch("http://localhost:3000/api/article/", { 
+	const response = await fetch("http://82.165.68.245:3000/api/article/", { 
 		method: "POST",
 		headers: {
 			'Accept': 'application/json',
@@ -108,14 +108,14 @@ async function addArticle(article, index) {
 }
 
 async function getArticles() {
-	const response = await fetch("http://localhost:3000/api/article");
+	const response = await fetch("http://82.165.68.245:3000/api/article");
 	const articles = await response.json();
 	console.log(articles);
 	listDisplay(articles, false);
 }
 
 async function delArticle(id) {
-	const response = await fetch(`http://localhost:3000/api/article/${id}`, { 
+	const response = await fetch(`http://82.165.68.245:3000/api/article/${id}`, { 
 		method: "DELETE",
 		headers: {
 			'Content-Type':'application/json',
@@ -129,7 +129,7 @@ async function delArticle(id) {
 }
 
 async function addButton(search) {
-	const response = await fetch(`http://localhost:3000/api/subject/${search}`);
+	const response = await fetch(`http://82.165.68.245:3000/api/subject/${search}`);
 	
 	if (document.getElementById("button-subject") !== null) {
 		document.getElementById("button-subject").parentElement.removeChild(document.getElementById("button-subject"));
@@ -141,7 +141,7 @@ async function addButton(search) {
 	if (response.status === 200) {
 		input.value = `Créer un bouton raccourci "${search}"`;
 		input.onclick = async () => {
-			const response = await fetch("http://localhost:3000/api/subject/", { 
+			const response = await fetch("http://82.165.68.245:3000/api/subject/", { 
 				method: "POST",
 				headers: {
 					'Accept': 'application/json',
@@ -170,7 +170,7 @@ async function addButton(search) {
 		input.value = `Supprimer le bouton raccourci "${search}"`;
 		input.style.backgroundColor = '#e83232';
 		input.onclick = async () => {
-			const response = await fetch(`http://localhost:3000/api/subject/${search}`, { 
+			const response = await fetch(`http://82.165.68.245:3000/api/subject/${search}`, { 
 				method: "DELETE",
 				headers: {
 					'Content-Type':'application/json',
@@ -190,7 +190,7 @@ async function addButton(search) {
 }
 
 async function getSubjects() {
-	const response = await fetch('http://localhost:3000/api/subject');
+	const response = await fetch('http://82.165.68.245:3000/api/subject');
 	const subjects = await response.json();
 	subjects.forEach(subject => {
 		console.log(subject)
@@ -207,7 +207,7 @@ async function getSubjects() {
 async function scrapingOneSubject(subject) {
 	document.getElementById("message").innerHTML = "Recherche en cours...";
 	const lang = document.getElementById('lang').value;
-	const responseJSON = await fetch(`http://localhost:3000/api/scraping/${subject}/${lang}`);
+	const responseJSON = await fetch(`http://82.165.68.245:3000/api/scraping/${subject}/${lang}`);
 	const response = await responseJSON.json();
 	console.log(response);
 	const articles = response.listUrls;
