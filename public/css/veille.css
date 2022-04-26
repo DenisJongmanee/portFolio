@@ -6,7 +6,7 @@
 .content li {
     padding: 15px;
     margin: 20px;
-    background-color: rgb(221, 233, 242);
+    background-color: rgb(97, 163, 215);
     border-radius: 7px;
 }
 
@@ -63,7 +63,7 @@ li p {
     font-size: 15px;
     margin: 5px 0px;
     /* color:rgb(116, 180, 209) */
-    color:rgb(126, 126, 126);
+    color:white;
 }
 
 li div button {
@@ -157,4 +157,23 @@ li div span {
 
 .choix button:hover {
     color: blue;
+}
+
+.title-article {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul li:hover {
+    background-color: rgb(60, 60, 170);
+}
+
+.number {
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 20px;
+    color:white;
+
 }
