@@ -165,7 +165,7 @@ li div span {
     font-size: 20px;
 }
 
-ul li:hover {
+ul .article:hover {
     background-color: rgb(60, 60, 170);
 }
 

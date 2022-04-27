@@ -36,7 +36,12 @@
                 <td>
                     <ul>
                         <li><img src="./public/images/bdd.png" alt="bdd"  style="width:10%"></li>
-                        <li><a href="./public/pdf/Certificat-20646-8963-4DCF.Pdf" target="_blank"><button>Voir la certification</button></a></li>
+                        <button onclick="displayStage(1)">Voir la certification</button>    
+                        <div style="margin-top:10px">
+                            <object style="display:none" id="1" type="application/pdf" data="./public/pdf/Certificat-20646-8963-4DCF.pdf" width="1000" height="600">
+                                Télécharger la certification : <a href="./public/pdf/./public/pdf/Certificat-20646-8963-4DCF.pdf">ENI</a>
+                            </object>
+                        </div>
                     </ul>
                     
                     
@@ -51,7 +56,12 @@
                 <td>
                     <ul>
                         <li><img src="./public/images/data.png" alt="data" style="width:10%"></li>
-                        <li><button>Voir la certification</button> </li>
+                        <button onclick="displayStage(2)">Voir la certification</button>    
+                        <div style="margin-top:10px">
+                            <object style="display:none" id="2" type="application/pdf" data="./public/pdf/ANSSI.pdf" width="1000" height="600">
+                                Télécharger la certification : <a href="./public/pdf/ANSSI.pdf">ANSSI</a>
+                            </object>
+                        </div>
                     </ul>
                 </td>
             </tr>

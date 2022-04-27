@@ -13,7 +13,7 @@ async function scraping() {
 	console.log(response);
 	const articles = response.listUrls;
 	console.log(articles);
-	document.getElementById("subject").innerHTML = search;
+	document.getElementById("subject").innerHTML = "Recherche sur : " + search;
 	listDisplay(articles, true);
 	// addButton(search);
 }
@@ -67,6 +67,7 @@ function listDisplay(articles, scraping) {
 		// div.appendChild(button);
 		// div.append(response);
 		const element = document.createElement("li");
+		element.className = "article";
 		element.appendChild(number);
 		element.appendChild(title);
 		element.appendChild(date);
@@ -83,12 +84,15 @@ function listDisplay(articles, scraping) {
 }
 
 function display(nbSkills, idSkill) {
+	console.log(nbSkills);
+	console.log(idSkill);
 	document.getElementById("hidden-block").style.display = "none";
 	for (let i=1; i<nbSkills+1; i++) {
 		document.getElementById(i).style.display = "none";
 		document.querySelector(`#button${i}`).style.backgroundColor = "rgb(104, 177, 211)"
 		
 	}
+	console.log(document.querySelector(`#button${idSkill}`))
 	document.querySelector(`#button${idSkill}`).style.backgroundColor = "#4a4a8e"
 	document.getElementById(idSkill).style.display = "block";
 }
