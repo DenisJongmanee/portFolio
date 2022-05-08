@@ -8,7 +8,7 @@ async function scraping() {
 		return;
 	}
 	document.getElementById("message").innerHTML = "Recherche en cours...";
-	const responseJSON = await fetch(`http://localhost:3000/api/scraping/${search}/${lang}`);
+	const responseJSON = await fetch(`https://shrouded-hamlet-05466.herokuapp.com/api/scraping/${search}/${lang}`);
 	const response = await responseJSON.json();
 	console.log(response);
 	const articles = response.listUrls;
