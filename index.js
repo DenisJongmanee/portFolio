@@ -2,17 +2,17 @@ async function scraping() {
 	const input = document.getElementById("search").value;
 	const search = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
 	const lang = document.getElementById('lang').value;
-	console.log(search); 
+	// console.log(search); 
 	if (search === "") {
 		document.getElementById("message").innerHTML = "Champ vide";
 		return;
 	}
 	document.getElementById("message").innerHTML = "Recherche en cours...";
-	const responseJSON = await fetch(`https://shrouded-hamlet-05466.herokuapp.com/api/scraping/${search}/${lang}`);
+	const responseJSON = await fetch(`http://127.0.0.1:3000/api/scraping/${search}/${lang}`);
 	const response = await responseJSON.json();
-	console.log(response);
+	// console.log(response);
 	const articles = response.listUrls;
-	console.log(articles);
+	// console.log(articles);
 	document.getElementById("subject").innerHTML = "Recherche sur : " + search;
 	listDisplay(articles, true);
 	// addButton(search);
@@ -84,15 +84,15 @@ function listDisplay(articles, scraping) {
 }
 
 function display(nbSkills, idSkill) {
-	console.log(nbSkills);
-	console.log(idSkill);
+	// console.log(nbSkills);
+	// console.log(idSkill);
 	document.getElementById("hidden-block").style.display = "none";
 	for (let i=1; i<nbSkills+1; i++) {
 		document.getElementById(i).style.display = "none";
 		document.querySelector(`#button${i}`).style.backgroundColor = "rgb(104, 177, 211)"
 		
 	}
-	console.log(document.querySelector(`#button${idSkill}`))
+	// console.log(document.querySelector(`#button${idSkill}`))
 	document.querySelector(`#button${idSkill}`).style.backgroundColor = "#4a4a8e"
 	document.getElementById(idSkill).style.display = "block";
 }
@@ -240,11 +240,20 @@ function displayVeille(id) {
 	document.getElementById('button'+id).style.backgroundColor = "rgb(74, 74, 142)";
 }
 
+
 // window.onload = getSubjects;
 
-
+function Enterlistener() {
+	console.log("add")
+	document.querySelector('#search').addEventListener('keypress', e => {
+		if (e.key === 'Enter') {
+			scraping();
+		}
+	})
+}
+window.onload = Enterlistener;
 function displayStage(id) {
 	let block = document.getElementById(id);
-	console.log(block.style.display)
+	// console.log(block.style.display)
 	block.style.display = block.style.display === 'none' ? '' : 'none';
 }
